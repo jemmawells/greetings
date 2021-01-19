@@ -10,4 +10,10 @@ internal class GreetingsKtTest {
         assertThat(greetings("Bob")).isEqualTo("Hello, Bob")
     }
 
+    @Test
+    fun `Greeting should say Hello, my friend when no name is given`(){
+
+        assertThat(greetings(null)).isEqualTo("Hello, my friend")
+    }
+
 }
