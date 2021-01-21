@@ -21,4 +21,10 @@ internal class GreetingsKtTest {
 
         assertThat(greetings(null)).isEqualTo("Hello, my friend")
     }
+
+    @Test
+    fun `Greeting should be in caps when name is in caps`(){
+
+        assertThat(greetings("BOB")).isEqualTo("HELLO, BOB!")
+    }
 }

@@ -1,4 +1,8 @@
-
 fun greetings(name: String?): String {
-    return if (name == null) "Hello, my friend" else "Hello, $name"
+
+    val nameUpperCase = name?.toUpperCase()
+
+    if (name == null) return "Hello, my friend"
+    if (name == nameUpperCase) return "HELLO, $name!"
+    else return "Hello, $name"
 }
