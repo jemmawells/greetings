@@ -8,3 +8,7 @@ fun greetings(name: String?): String {
         else -> "Hello, $name"
     }
 }
+
+fun greetings(names: List<String>): String {
+    return "Hello, " + names[0] + " and " + names[1]
+}
