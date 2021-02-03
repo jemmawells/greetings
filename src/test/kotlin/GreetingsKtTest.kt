@@ -34,4 +34,11 @@ internal class GreetingsKtTest {
         assertThat(greetings(listOf("Bob", "Susan"))).isEqualTo("Hello, Bob and Susan")
     }
 
+    @Test
+    fun `Greeting should handle all names when multiple names are provided`(){
+
+        assertThat(greetings(listOf("Bob", "Susan", "Rachel"))).isEqualTo("Hello, Bob, Susan and Rachel")
+    }
+
+
 }

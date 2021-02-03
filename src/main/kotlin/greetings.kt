@@ -10,5 +10,8 @@ fun greetings(name: String?): String {
 }
 
 fun greetings(names: List<String>): String {
-    return "Hello, " + names[0] + " and " + names[1]
+
+    val lastNameString = " and ${names[names.size -1]}"
+
+    return names.dropLast(1).joinToString(prefix = "Hello, ", postfix = lastNameString)
 }
